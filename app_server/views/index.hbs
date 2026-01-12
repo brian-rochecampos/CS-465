@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>{{title}}</h1>
+    <p>Available Trips</p>
+  </div>
+</div>
+
+<div class="row">
+  {{#each trips}}
+    <div class="col-md-4">
+      <div class="card" style="margin-bottom: 20px;">
+        <div class="card-body">
+          <h3 class="card-title">{{name}}</h3>
+          <p class="card-text">{{description}}</p>
+          <p><strong>Location:</strong> {{location}}</p>
+          <p><strong>Price:</strong> {{price}}</p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

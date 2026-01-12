@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  
+  <div id="header">
+    <div>
+      <a href="/" class="logo">
+        <img src="/images/logo.png" alt="Travlr Getaways">
+      </a>
+      <ul id="navigation">
+        
+        <li class="{{#if (eq routeName 'home')}}selected{{/if}}"><a href="/">Home</a></li>
+        <li class="{{#if (eq routeName 'travel')}}selected{{/if}}"><a href="/travel">Travel</a></li>
+        <li class="{{#if (eq routeName 'rooms')}}selected{{/if}}"><a href="/rooms">Rooms</a></li>
+        <li class="{{#if (eq routeName 'meals')}}selected{{/if}}"><a href="/meals">Meals</a></li>
+        <li class="{{#if (eq routeName 'news')}}selected{{/if}}"><a href="/news">News</a></li>
+        <li class="{{#if (eq routeName 'about')}}selected{{/if}}"><a href="/about">About</a></li>
+        <li class="{{#if (eq routeName 'contact')}}selected{{/if}}"><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="body">
+    {{{body}}}
+  </div>
+
+  
+  <div id="footer">
+    <div>
+      <p>&copy; 2023 by Travlr Getaways. All Rights Reserved</p>
+    </div>
+  </div>
+
+</body>
+</html>

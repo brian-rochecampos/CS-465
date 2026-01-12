@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Caribbean Getaway",
+    "description": "Relax on sunny beaches with crystal clear water.",
+    "location": "Caribbean",
+    "price": "$1,299"
+  },
+  {
+    "name": "European Adventure",
+    "description": "Explore historic cities and famous landmarks.",
+    "location": "Europe",
+    "price": "$2,199"
+  },
+  {
+    "name": "Mountain Retreat",
+    "description": "Enjoy peaceful mountain views and fresh air.",
+    "location": "Colorado",
+    "price": "$999"
+  }
+]
