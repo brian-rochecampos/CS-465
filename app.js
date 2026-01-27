@@ -3,9 +3,10 @@ const path = require('path');
 const hbs = require('hbs');
 
 require('./app_server/models/db');
-require('./app_server/models/trip');
 
 const indexRouter = require('./app_server/routes/index');
+
+const apiRouter = require('./app_api/routes');
 
 const app = express();
 
@@ -20,6 +21,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/', indexRouter);
+
+app.use('/api', apiRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
