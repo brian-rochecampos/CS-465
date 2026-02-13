@@ -1,0 +1,17 @@
+<h2>Trips</h2>
+
+<div>
+  <input [(ngModel)]="newDestination" placeholder="Destination">
+  <input [(ngModel)]="newDuration" type="number" placeholder="Days">
+  <button (click)="addTrip()">Add Trip</button>
+</div>
+
+<hr>
+
+<app-trip-card
+  *ngFor="let trip of trips; let i = index"
+  [trip]="trip"
+  [index]="i"
+  (delete)="deleteTrip($event)"
+  (update)="updateTrip($event)">
+</app-trip-card>
