@@ -1,0 +1,16 @@
+<div>
+
+  <div *ngIf="!editing">
+    <strong>{{ trip.destination }}</strong> — {{ trip.duration }} days
+    <button (click)="startEdit()">Edit</button>
+    <button (click)="delete.emit(index)">Delete</button>
+  </div>
+
+  <div *ngIf="editing">
+    <input [(ngModel)]="editDestination">
+    <input [(ngModel)]="editDuration" type="number">
+    <button (click)="saveEdit()">Save</button>
+    <button (click)="cancelEdit()">Cancel</button>
+  </div>
+
+</div>

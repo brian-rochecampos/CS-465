@@ -1,8 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const tripController = require('../controllers/trip');
+const authController = require('../controllers/auth');
+const authMiddleware = require('../middleware/auth');
 
-router.get('/trips', tripController.getAllTrips);
-router.get('/trips/:tripId', tripController.getTripById);
+router.post('/login', authController.login);
+
+router.get('/admin', authMiddleware, (req, res) => {
+  res.json({ message: 'Welcome to the admin panel' });
+});
 
 module.exports = router;

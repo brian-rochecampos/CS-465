@@ -11,8 +11,14 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@angular/common": "^21.1.5",
+    "@angular/core": "^21.1.5",
+    "@auth0/angular-jwt": "^5.2.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "hbs": "^4.2.0",
+    "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.3"
   }
 }
