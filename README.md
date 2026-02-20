@@ -1,4 +1,4 @@
-Architecture
+Architecture 
 In my full-stack project, I used the MEAN stack, which consists of MongoDB, Express, Angular, and Node.js, for both the customer-facing and administrative sides of the application. Initially, the customer-facing side was built using Express to render static HTML content. As the project evolved, I incorporated Angular to create a single-page application (SPA), which added dynamic functionality and a smoother user experience.
 For the frontend development, I used Angular to create dynamic components. The Angular app structure included building components for displaying the trip listings and the admin interface. The admin panel was integrated with the backend using the Angular CLI, and it allowed for managing trip data using POST, GET, PUT, and DELETE methods.
 On the backend, I set up the server with Node.js and used Express to handle the routing and controllers, which served the data from the MongoDB database. I integrated MongoDB using Mongoose, which helped manage the trip data and other related information. This data was made available through RESTful API endpoints.
